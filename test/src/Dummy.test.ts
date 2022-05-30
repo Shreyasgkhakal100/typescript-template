@@ -61,4 +61,9 @@ describe("Dummy Test", () => {
         expect(dummyOutputReturned).toEqual([2, 2, 2, 3, 3, 173]);
     })
 
+    it("should return 'Not Possible' for invalid input", ()=>{
+        const dummyOutputReturned = primeFactors(-2);
+        expect(dummyOutputReturned).toEqual('Not Possible');
+    })
+
 })
