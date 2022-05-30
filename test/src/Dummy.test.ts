@@ -30,4 +30,9 @@ describe("Dummy Test", () => {
         console.log(dummyOutputReturned)
         expect(dummyOutputReturned).toEqual([3, 2]);
     })
+
+    it("should return [7] for 7", () => {
+        const dummyOutputReturned = primeFactors(7);
+        expect(dummyOutputReturned).toEqual([7]);
+    })
 })
