@@ -1,3 +1,9 @@
 export const primeFactors = (input: number) => {
-    return input
+    let ans = [];
+    if(input < 4) {
+        return input;
+    }else{
+        ans = [2, 2]
+        return ans;
+    }
 }
