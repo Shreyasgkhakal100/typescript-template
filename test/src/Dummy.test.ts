@@ -45,8 +45,8 @@ describe("Dummy Test", () => {
         expect(dummyOutputReturned).toEqual([3, 3]);
     })
 
-    it("should return [2, 3, 3] for 12", () => {
+    it("should return [2, 2, 3] for 12", () => {
         const dummyOutputReturned = primeFactors(12);
-        expect(dummyOutputReturned).toEqual([2, 3, 3]);
+        expect(dummyOutputReturned).toEqual([2, 2, 3]);
     })
 })

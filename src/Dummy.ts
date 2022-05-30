@@ -1,18 +1,19 @@
 export const primeFactors = (input: number) => {
-    let ans = [];
+    let num = 2;
+    let ans = []
     if(input === 1) {
         return [1];
+    }else{
+        while(input%num === 0){
+            ans.push(num);
+            input = input/num;
+            if(input === 1){
+                break;
+            }
+            while (input % num !== 0) {
+              num++;
+            }
+        }
+        return ans;
     }
-    if(input%3 === 0){
-        ans.push(3);
-        input = input/3;
-    }
-    while(input%2 === 0){
-        ans.push(2);
-        input = input / 2;
-    }
-    if(input !== 1){
-        ans.push(input);
-    }
-    return ans;
 }
