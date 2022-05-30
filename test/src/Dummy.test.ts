@@ -27,12 +27,16 @@ describe("Dummy Test", () => {
 
     it("should return [3, 2] for 6", () => {
         const dummyOutputReturned = primeFactors(6);
-        console.log(dummyOutputReturned)
         expect(dummyOutputReturned).toEqual([3, 2]);
     })
 
     it("should return [7] for 7", () => {
         const dummyOutputReturned = primeFactors(7);
         expect(dummyOutputReturned).toEqual([7]);
+    })
+
+    it("should return [2, 2, 2] for 8", () => {
+        const dummyOutputReturned = primeFactors(8);
+        expect(dummyOutputReturned).toEqual([2, 2, 2]);
     })
 })
