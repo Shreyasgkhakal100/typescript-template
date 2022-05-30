@@ -14,4 +14,9 @@ describe("Dummy Test", () => {
       const dummyOutputReturned = primeFactors(3);
       expect(dummyOutputReturned).toBe(3);
     });
+
+    it("should return 2 times 2 for 4", () => {
+      const dummyOutputReturned = primeFactors(4);
+      expect(dummyOutputReturned).toBe([2, 2]);
+    });
 })
