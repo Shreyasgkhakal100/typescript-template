@@ -9,4 +9,9 @@ describe("Dummy Test", () => {
       const dummyOutputReturned = primeFactors(2);
       expect(dummyOutputReturned).toBe(2);
     });
+
+    it("should return 3 for 3", () => {
+      const dummyOutputReturned = primeFactors(3);
+      expect(dummyOutputReturned).toBe(3);
+    });
 })
