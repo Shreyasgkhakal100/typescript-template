@@ -1,6 +1,7 @@
 export const primeFactors = (input: number) => {
     let num = 2;
     let ans = []
+    if(input < 1) return "Not Possible";
     if(input === 1) {
         return [1];
     }else{
