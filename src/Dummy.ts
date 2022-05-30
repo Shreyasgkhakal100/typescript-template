@@ -3,6 +3,6 @@ export const primeFactors = (input: number) => {
     if(input == 4) {
         return [2, 2];
     }else{
-        return input;
+        return [input];
     }
 }
