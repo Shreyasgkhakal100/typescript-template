@@ -19,4 +19,9 @@ describe("Dummy Test", () => {
       const dummyOutputReturned = primeFactors(4);
       expect(dummyOutputReturned).toEqual([2, 2]);
     });
+
+    it("should return 5 for 5", () => {
+        const dummyOutputReturned = primeFactors(5);
+        expect(dummyOutputReturned).toBe(5);
+    })
 })
