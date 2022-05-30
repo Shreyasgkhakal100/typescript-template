@@ -7,9 +7,9 @@ export const primeFactors = (input: number) => {
         ans.push(3);
         input = input/3;
     }
-    if(input%2 === 0){
+    while(input%2 === 0){
         ans.push(2);
-        input = input/2;
+        input = input / 2;
     }
     if(input !== 1){
         ans.push(input);
