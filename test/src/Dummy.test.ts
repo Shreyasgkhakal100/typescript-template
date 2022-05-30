@@ -50,4 +50,15 @@ describe("Dummy Test", () => {
         const dummyOutputReturned = primeFactors(12);
         expect(dummyOutputReturned).toEqual([2, 2, 3]);
     })
+
+    it("should return [2, 2, 5, 5] for 100", () => {
+        const dummyOutputReturned = primeFactors(100);
+        expect(dummyOutputReturned).toEqual([2, 2, 5, 5]);
+    })
+
+    it("should return [2, 2, 2, 3, 3, 173] for 12456", ()=>{
+        const dummyOutputReturned = primeFactors(12456);
+        expect(dummyOutputReturned).toEqual([2, 2, 2, 3, 3, 173]);
+    })
+
 })
