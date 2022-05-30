@@ -1,8 +1,12 @@
-import { dummyOutput } from '../../src/Dummy'
+import { primeFactors } from '../../src/Dummy'
 
 describe("Dummy Test", () => {
-    it("should assert on the dummy output", () => {
-        const dummyOutputReturned = dummyOutput("hello")
-        expect(dummyOutputReturned).toBe("hellohello")
+    it("should return 1 for 1", () => {
+        const dummyOutputReturned = primeFactors(1)
+        expect(dummyOutputReturned).toBe(1)
     })
+    it("should return 2 for 2", () => {
+      const dummyOutputReturned = primeFactors(2);
+      expect(dummyOutputReturned).toBe(2);
+    });
 })

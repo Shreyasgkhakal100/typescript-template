@@ -1,3 +1,3 @@
-export const dummyOutput = (input: string) => {
-    return input + input
+export const primeFactors = (input: number) => {
+    return input
 }
